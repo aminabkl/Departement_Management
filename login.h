@@ -2,6 +2,9 @@
 #define LOGIN_H
 
 #include <QDialog>
+#include <QtSql>
+#include <QtDebug>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Login; }
