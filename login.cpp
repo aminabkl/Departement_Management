@@ -13,13 +13,11 @@ Login::~Login()
 {
     delete ui;
 }
-
-
 void Login::on_loginButton_clicked()
 {
     QString username = ui->username->text();
     QString password = ui->password->text();
-    if(username == "test" && password == "test"){
+    if(username == "amina" && password == "amina"){
         QMessageBox::information(this,"Login","Username and password are correct");
     }
     else {
