@@ -7,6 +7,7 @@ Login::Login(QWidget *parent)
     , ui(new Ui::Login)
 {
     ui->setupUi(this);
+
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
         db.setDatabaseName("C:/Users/lenovo/Documents/QT/DepartmentDB.db");
         if(!db.open()){
@@ -25,13 +26,25 @@ Login::~Login()
 }
 void Login::on_loginButton_clicked()
 {
-//    QString username = ui->username->text();
-//    QString password = ui->password->text();
-//    if(username == "amina" && password == "amina"){
-//        QMessageBox::information(this,"Login","Username and password are correct");
-//    }
-//    else {
-//        QMessageBox::warning(this,"Login","Username and password are not correct");
-//    }
-}
+    QString Username, Password;
+    Username = ui->username->text();
+    Password = ui->password->text();
+
+    if(!db.isOpen()){
+            qDebug()<<"Failed";
+            return;
+        }
+    QSqlQuery qry;
+        if(qry.exec("SELECT Username, Password FROM Login WHERE Username='"+Username+"'and Password='"+Password+"'" )){
+
+            if (qry.next()){
+                ui->auth_ver->setText("WELCOME");
+                QString msg = "Username = " +qry.value(0).toString()+"\n" +
+                        "Password = " +qry.value(1).toString()+"\n";
+
+                QMessageBox::warning(this,"Welcome Two ",msg);
+                    }
+            else ui->auth_ver->setText("ERROR NO AUTH");
+
+}}
 

@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QtSql>
 #include <QtDebug>
+#include <QSqlQuery>
 
 
 QT_BEGIN_NAMESPACE
@@ -23,5 +24,6 @@ private slots:
 
 private:
     Ui::Login *ui;
+    QSqlDatabase db;
 };
 #endif // LOGIN_H

@@ -95,6 +95,19 @@
      <string>db_status</string>
     </property>
    </widget>
+   <widget class="QLabel" name="auth_ver">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>auth_ver</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>
