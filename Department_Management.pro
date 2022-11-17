@@ -18,7 +18,8 @@ HEADERS += \
     signup.h
 
 FORMS += \
-    login.ui
+    login.ui \
+    signup.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

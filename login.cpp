@@ -26,8 +26,8 @@ Login::~Login()
 }
 void Login::on_loginButton_clicked()
 {
-    QString Username, Password;
-    Username = ui->username->text();
+    QString Email, Password;
+    Email = ui->email->text();
     Password = ui->password->text();
 
     if(!db.isOpen()){
@@ -35,18 +35,16 @@ void Login::on_loginButton_clicked()
             return;
         }
     QSqlQuery qry;
-    if(qry.exec("SELECT * FROM Login WHERE Username='"+Username+"'and Password='"+Password+"'" )){
+    if(qry.exec("SELECT * FROM Login WHERE Email='"+Email+"'and Password='"+Password+"'" )){
         int count=0;
                     while(qry.next()){
                         count++;
                         qDebug()<<count;
                     }
-                    if(count==1 ){
-                           ui->auth_ver->setText("WELCOME");
+                    if(count==1 ){                           
                            QMessageBox::warning(this,"Login","WELCOME ADMIN");}
 
                    else{
-                        ui->auth_ver->setText("ERROR NO AUTH");
                     QMessageBox::warning(this,"Login","Incorrect, Vérifier votre email ou votre mot de passe");
 }
 }
