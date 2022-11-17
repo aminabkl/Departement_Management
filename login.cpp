@@ -8,7 +8,7 @@ Login::Login(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+    db = QSqlDatabase::addDatabase("QSQLITE");
         db.setDatabaseName("C:/Users/lenovo/Documents/QT/DepartmentDB.db");
         if(!db.open()){
 //            qDebug()<<"Can't connect to the database !";
@@ -35,16 +35,22 @@ void Login::on_loginButton_clicked()
             return;
         }
     QSqlQuery qry;
-        if(qry.exec("SELECT Username, Password FROM Login WHERE Username='"+Username+"'and Password='"+Password+"'" )){
-
-            if (qry.next()){
-                ui->auth_ver->setText("WELCOME");
-                QString msg = "Username = " +qry.value(0).toString()+"\n" +
-                        "Password = " +qry.value(1).toString()+"\n";
-
-                QMessageBox::warning(this,"Welcome Two ",msg);
+    if(qry.exec("SELECT * FROM Login WHERE Username='"+Username+"'and Password='"+Password+"'" )){
+        int count=0;
+                    while(qry.next()){
+                        count++;
+                        qDebug()<<count;
                     }
-            else ui->auth_ver->setText("ERROR NO AUTH");
+                    if(count==1 ){
+                           ui->auth_ver->setText("WELCOME");
+                           QMessageBox::warning(this,"Login","WELCOME ADMIN");}
 
-}}
+                   else{
+                        ui->auth_ver->setText("ERROR NO AUTH");
+                    QMessageBox::warning(this,"Login","Incorrect, Vérifier votre email ou votre mot de passe");
+}
+}
+
+}
+
 
