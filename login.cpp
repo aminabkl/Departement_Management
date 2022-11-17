@@ -1,5 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
+#include "signup.h"
 #include <QMessageBox>
 
 Login::Login(QWidget *parent)
@@ -11,12 +12,10 @@ Login::Login(QWidget *parent)
     db = QSqlDatabase::addDatabase("QSQLITE");
         db.setDatabaseName("C:/Users/lenovo/Documents/QT/DepartmentDB.db");
         if(!db.open()){
-//            qDebug()<<"Can't connect to the database !";
-            ui->db_status->setText("Failed to connect to database");
+            qDebug()<<"Can't connect to the database !";
         }
         else{
-//            qDebug()<<"Connected !";
-            ui->db_status->setText("Connected !! ");
+            qDebug()<<"Connected !";
         }
 }
 
@@ -51,4 +50,10 @@ void Login::on_loginButton_clicked()
 
 }
 
+void Login::on_Signup_Button_clicked()
+{
+    this->hide();
+        Signup Signup;
+        Signup.exec();
+}
 
