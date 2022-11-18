@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     login.cpp \
+    salle.cpp \
     signup.cpp
 
 HEADERS += \
     login.h \
+    salle.h \
     signup.h
 
 FORMS += \
     login.ui \
+    salle.ui \
     signup.ui
 
 # Default rules for deployment.
