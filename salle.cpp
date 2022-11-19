@@ -1,5 +1,6 @@
 #include "salle.h"
 #include "ui_salle.h"
+#include "login.h"
 #include <QMessageBox>
 #include <QSqlQueryModel>
 
@@ -43,5 +44,13 @@ void Salle::on_LoadButton_clicked()
 
 
 
+}
+
+
+void Salle::on_LogoutButton_clicked()
+{
+    this->hide();
+            Login Login;
+            Login.exec();
 }
 

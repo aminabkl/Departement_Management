@@ -21,6 +21,8 @@ public:
 private slots:
     void on_LoadButton_clicked();
 
+    void on_LogoutButton_clicked();
+
 private:
     Ui::Salle *ui;
     QSqlDatabase db;

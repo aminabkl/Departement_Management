@@ -21,6 +21,8 @@ public:
 private slots:
     void on_SignupButton_clicked();
 
+    void on_LoginReturn_clicked();
+
 private:
     Ui::Signup *ui;
     QSqlDatabase db;

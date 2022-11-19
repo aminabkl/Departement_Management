@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>638</width>
-    <height>433</height>
+    <width>577</width>
+    <height>484</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,34 +16,57 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>40</y>
+     <x>50</x>
+     <y>20</y>
      <width>471</width>
-     <height>331</height>
+     <height>421</height>
     </rect>
    </property>
    <property name="title">
-    <string>Signup</string>
+    <string>Créer un compte</string>
    </property>
    <widget class="QPushButton" name="SignupButton">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>290</y>
-      <width>111</width>
-      <height>24</height>
+      <x>160</x>
+      <y>330</y>
+      <width>150</width>
+      <height>25</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+    </property>
     <property name="text">
-     <string>Create account</string>
+     <string>Confirmer</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>40</y>
-      <width>200</width>
+      <x>70</x>
+      <y>80</y>
+      <width>331</width>
       <height>221</height>
      </rect>
     </property>
@@ -52,13 +75,29 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>Username</string>
+          <string>Identifiant</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Username"/>
+        <widget class="QLineEdit" name="Username">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 2px;
+height:25px;
+}</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -66,13 +105,29 @@
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
         <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>Email</string>
+          <string>E-mail</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Email"/>
+        <widget class="QLineEdit" name="Email">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 2px;
+height:25px;
+}</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -80,13 +135,32 @@
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
         <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>Password</string>
+          <string>Mot de passe</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Password"/>
+        <widget class="QLineEdit" name="Password">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 2px;
+height:25px;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
@@ -94,17 +168,72 @@
       <layout class="QHBoxLayout" name="horizontalLayout_4">
        <item>
         <widget class="QLabel" name="label_4">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>Verify password</string>
+          <string>Vérifier le mot de passe</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Verify_pass"/>
+        <widget class="QLineEdit" name="Verify_pass">
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 2px;
+height:25px;
+}</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
        </item>
       </layout>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="LoginReturn">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>370</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Retour</string>
+    </property>
    </widget>
   </widget>
  </widget>

@@ -48,6 +48,19 @@
      <string>Afficher la table</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="LogoutButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>350</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Logout</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

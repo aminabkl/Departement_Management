@@ -12,13 +12,11 @@ Login::Login(QWidget *parent)
     ui->setupUi(this);
 
     // LOGO
-//    QPixmap FstLogo("C:/Users/lenovo/Desktop/LSI-S1/9-png pics/FST-Tanger.png");
     QPixmap FstLogo(":/resources/img/FST-Tanger.png");
     int w1 = ui->FstLogo->width();
     int h1 = ui->FstLogo->height();
     ui->FstLogo->setPixmap(FstLogo.scaled(w1,h1,Qt::KeepAspectRatio));
 
-//    QPixmap UniLogo("C:/Users/lenovo/Desktop/LSI-S1/9-png pics/UAE-Logo.png");
     QPixmap UniLogo(":/resources/img/UAE-Logo.png");
     int w2 = ui->UniLogo->width();
     int h2 = ui->UniLogo->height();
@@ -56,8 +54,7 @@ void Login::on_loginButton_clicked()
                         count++;
                         qDebug()<<count;
                     }
-                    if(count==1 ){                           
-                           QMessageBox::information(this,"Login","WELCOME ADMIN");
+                    if(count==1 ){
                            this->hide();
                                Salle Salle;
                                Salle.exec();
@@ -76,4 +73,3 @@ void Login::on_Signup_Button_clicked()
         Signup Signup;
         Signup.exec();
 }
-
