@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/FST-Tanger.png</file>
+        <file>img/UAE-Logo.png</file>
+    </qresource>
+</RCC>

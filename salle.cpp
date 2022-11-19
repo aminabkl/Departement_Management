@@ -1,6 +1,5 @@
 #include "salle.h"
 #include "ui_salle.h"
-#include "login.h"
 #include <QMessageBox>
 #include <QSqlQueryModel>
 
