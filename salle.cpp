@@ -4,6 +4,7 @@
 #include "addsalle.h"
 #include "editsalle.h"
 #include <QMessageBox>
+#include <QDebug>
 #include <QSqlQueryModel>
 
 Salle::Salle(QWidget *parent) :
@@ -31,7 +32,7 @@ Salle::Salle(QWidget *parent) :
         QSqlQueryModel *model = new QSqlQueryModel();
         QSqlQuery *qry = new QSqlQuery(db);
 
-        qry->prepare("SELECT Cycle, Filiere, Semestre, Numero_Salle FROM Salle");
+        qry->prepare("SELECT * FROM Salle");
         qry->exec();
         model->setQuery(std::move(*qry));
         ui->SalleTable->setModel(model);
@@ -76,3 +77,46 @@ void Salle::on_DeleteButton_clicked()
 
 }
 
+// chercher dans le tableau
+void Salle::on_SearchButton_clicked()
+{
+    QString SearchValue= "%"+ui->SearchValue->text()+"%";
+
+    if(!SearchValue.isEmpty())
+    {
+        //define the query on the db and the model
+        auto qry = QSqlQuery(db);
+        QString select{"SELECT * FROM Salle WHERE "
+                       "Salle_ID LIKE '"+SearchValue+"'"
+                       "OR Cycle LIKE '"+SearchValue+"'"
+                       "OR Filiere LIKE '"+SearchValue+"'"
+                       "OR Semestre LIKE '"+SearchValue+"'"
+                       "OR Numero_Salle LIKE '"+SearchValue+"'"};
+
+        //execute the query
+        if(!qry.exec(select))
+            qDebug() << "Cannot select from salle";
+        else
+        {
+            //define the model
+            QSqlQueryModel * model = new QSqlQueryModel;
+            model->setQuery(std::move(qry));
+            ui->SalleTable->setModel(model);
+        }
+    }
+    else
+    {
+        //define the query on the db and the model
+        auto qry = QSqlQuery(db);
+        QString select{"SELECT * FROM Salle"};
+
+        //execute the query
+        if(!qry.exec(select))
+            qDebug() << "Cannot select from salle";
+
+        //define the model
+        QSqlQueryModel * model = new QSqlQueryModel;
+        model->setQuery(std::move(qry));
+        ui->SalleTable->setModel(model);
+    }
+}

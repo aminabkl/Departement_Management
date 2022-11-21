@@ -28,6 +28,8 @@ private slots:
 
     void on_DeleteButton_clicked();
 
+    void on_SearchButton_clicked();
+
 private:
     Ui::Salle *ui;
     QSqlDatabase db;

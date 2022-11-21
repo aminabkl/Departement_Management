@@ -31,18 +31,19 @@ void Signup::on_SignupButton_clicked()
     Email = ui->Email->text();
     Password = ui->Password->text();
     Verify_pass = ui->Verify_pass->text();
+
     if(Username=="" || Email=="" ||Password=="" || Verify_pass==""){
         QMessageBox::warning(this,"Signup","Veuillez remplir tout les champs s'il vous plaît.");
     }
     else{
 
     //cherche si le compte existe
-        auto search = QSqlQuery(db);
+        auto qry = QSqlQuery(db);
         QString searchAcc = {"SELECT Email FROM Login WHERE Email='"+Email+"'" };
-        if(!search.exec(searchAcc))
+        if(!qry.exec(searchAcc))
             qDebug() << "Cannot select";
         int count = 0;
-        while(search.next())
+        while(qry.next())
             count++;
 
     if(count>=1)
