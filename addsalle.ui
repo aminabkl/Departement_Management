@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Signup</class>
- <widget class="QDialog" name="Signup">
+ <class>AddSalle</class>
+ <widget class="QDialog" name="AddSalle">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>577</width>
-    <height>484</height>
+    <width>549</width>
+    <height>519</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>40</y>
+     <x>40</x>
+     <y>50</y>
      <width>471</width>
      <height>401</height>
     </rect>
@@ -25,7 +25,7 @@
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="SignupButton">
+   <widget class="QPushButton" name="AddButton">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -58,7 +58,7 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Confirmer</string>
+     <string>Ajouter</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -83,12 +83,17 @@ QPushButton:pressed
           </font>
          </property>
          <property name="text">
-          <string>Identifiant</string>
+          <string>Cycle</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Username">
+        <widget class="QLineEdit" name="Cycle">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
 	background-color: rgb(255, 255, 255);
@@ -113,12 +118,17 @@ height:25px;
           </font>
          </property>
          <property name="text">
-          <string>E-mail</string>
+          <string>Filière</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Email">
+        <widget class="QLineEdit" name="Filiere">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
 	background-color: rgb(255, 255, 255);
@@ -143,12 +153,17 @@ height:25px;
           </font>
          </property>
          <property name="text">
-          <string>Mot de passe</string>
+          <string>Semestre</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Password">
+        <widget class="QLineEdit" name="Semestre">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
 	background-color: rgb(255, 255, 255);
@@ -158,7 +173,7 @@ height:25px;
 }</string>
          </property>
          <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+          <enum>QLineEdit::Normal</enum>
          </property>
         </widget>
        </item>
@@ -176,12 +191,17 @@ height:25px;
           </font>
          </property>
          <property name="text">
-          <string>Vérifier le mot de passe</string>
+          <string>Numero de la salle</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="Verify_pass">
+        <widget class="QLineEdit" name="NumeroSalle">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
 	background-color: rgb(255, 255, 255);
@@ -191,7 +211,7 @@ height:25px;
 }</string>
          </property>
          <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
+          <enum>QLineEdit::Normal</enum>
          </property>
         </widget>
        </item>
@@ -199,7 +219,7 @@ height:25px;
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="LoginReturn">
+   <widget class="QPushButton" name="SalleReturn">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -239,10 +259,10 @@ QPushButton:pressed
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>50</x>
      <y>20</y>
-     <width>171</width>
-     <height>31</height>
+     <width>181</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -253,7 +273,7 @@ QPushButton:pressed
     </font>
    </property>
    <property name="text">
-    <string>Créer un compte</string>
+    <string>Ajouter une salle</string>
    </property>
   </widget>
  </widget>

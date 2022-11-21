@@ -19,9 +19,14 @@ public:
     ~Salle();
 
 private slots:
-    void on_LoadButton_clicked();
 
     void on_LogoutButton_clicked();
+
+    void on_AddButton_clicked();
+
+    void on_EditButton_clicked();
+
+    void on_DeleteButton_clicked();
 
 private:
     Ui::Salle *ui;

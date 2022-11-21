@@ -1,6 +1,7 @@
 #include "salle.h"
 #include "ui_salle.h"
 #include "login.h"
+#include "addsalle.h"
 #include <QMessageBox>
 #include <QSqlQueryModel>
 
@@ -18,6 +19,26 @@ Salle::Salle(QWidget *parent) :
         else{
             qDebug()<<"Connected !";
         }
+
+
+        // Affichage de la salle juste apres avoir acceder a la fenetre
+        if(!db.isOpen()){
+                qDebug()<<"Failed";
+                return;
+            }
+
+        QSqlQueryModel *model = new QSqlQueryModel();
+        QSqlQuery *qry = new QSqlQuery(db);
+
+        qry->prepare("SELECT Cycle, Filiere, Semestre, Numero_Salle FROM Salle");
+        qry->exec();
+        model->setQuery(std::move(*qry));
+        ui->SalleTable->setModel(model);
+
+        qDebug()<<(model->rowCount());
+
+
+
 }
 
 Salle::~Salle()
@@ -25,32 +46,31 @@ Salle::~Salle()
     delete ui;
 }
 
-void Salle::on_LoadButton_clicked()
-{
-    if(!db.isOpen()){
-            qDebug()<<"Failed";
-            return;
-        }
-
-    QSqlQueryModel *model = new QSqlQueryModel();
-    QSqlQuery *qry = new QSqlQuery(db);
-
-    qry->prepare("SELECT Cycle, Filiere, Semestre, Numero_Salle FROM Salle");
-    qry->exec();
-    model->setQuery(std::move(*qry));
-    ui->SalleTable->setModel(model);
-
-    qDebug()<<(model->rowCount());
-
-
-
-}
 
 
 void Salle::on_LogoutButton_clicked()
 {
     this->hide();
-            Login Login;
-            Login.exec();
+    Login Login;
+    Login.exec();
+}
+
+// Ajouter
+void Salle::on_AddButton_clicked()
+{
+            AddSalle AddSalle;
+            AddSalle.exec();
+}
+
+// Modifier
+void Salle::on_EditButton_clicked()
+{
+
+}
+
+// Supprimer
+void Salle::on_DeleteButton_clicked()
+{
+
 }
 

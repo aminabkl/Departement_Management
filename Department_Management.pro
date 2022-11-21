@@ -9,17 +9,20 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addsalle.cpp \
     main.cpp \
     login.cpp \
     salle.cpp \
     signup.cpp
 
 HEADERS += \
+    addsalle.h \
     login.h \
     salle.h \
     signup.h
 
 FORMS += \
+    addsalle.ui \
     login.ui \
     salle.ui \
     signup.ui
