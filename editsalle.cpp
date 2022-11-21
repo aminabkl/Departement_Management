@@ -12,3 +12,21 @@ EditSalle::~EditSalle()
 {
     delete ui;
 }
+
+void EditSalle::on_AddButton_clicked()
+{
+
+}
+
+
+void EditSalle::on_SalleReturn_clicked()
+{
+this->hide();
+}
+
+
+void EditSalle::on_SearchButton_clicked()
+{
+
+}
+

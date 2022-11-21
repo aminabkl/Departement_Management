@@ -2,6 +2,7 @@
 #include "ui_salle.h"
 #include "login.h"
 #include "addsalle.h"
+#include "editsalle.h"
 #include <QMessageBox>
 #include <QSqlQueryModel>
 
@@ -65,7 +66,8 @@ void Salle::on_AddButton_clicked()
 // Modifier
 void Salle::on_EditButton_clicked()
 {
-
+    EditSalle EditSalle;
+    EditSalle.exec();
 }
 
 // Supprimer
