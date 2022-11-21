@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AddSalle</class>
- <widget class="QDialog" name="AddSalle">
+ <class>SalleID</class>
+ <widget class="QDialog" name="SalleID">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>553</width>
-    <height>505</height>
+    <width>596</width>
+    <height>483</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>50</y>
+     <x>30</x>
+     <y>60</y>
      <width>471</width>
      <height>401</height>
     </rect>
@@ -259,9 +259,9 @@ QPushButton:pressed
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>20</y>
-     <width>181</width>
+     <x>40</x>
+     <y>30</y>
+     <width>211</width>
      <height>51</height>
     </rect>
    </property>
@@ -273,7 +273,7 @@ QPushButton:pressed
     </font>
    </property>
    <property name="text">
-    <string>Ajouter une salle</string>
+    <string>Saisir l'ID de la salle</string>
    </property>
   </widget>
  </widget>

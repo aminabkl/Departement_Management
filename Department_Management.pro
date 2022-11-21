@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     addsalle.cpp \
+    editsalle.cpp \
     main.cpp \
     login.cpp \
     salle.cpp \
@@ -17,12 +18,14 @@ SOURCES += \
 
 HEADERS += \
     addsalle.h \
+    editsalle.h \
     login.h \
     salle.h \
     signup.h
 
 FORMS += \
     addsalle.ui \
+    editsalle.ui \
     login.ui \
     salle.ui \
     signup.ui
