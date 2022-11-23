@@ -19,11 +19,11 @@ public:
     ~EditSalle();
 
 private slots:
-    void on_AddButton_clicked();
-
     void on_SalleReturn_clicked();
 
     void on_SearchButton_clicked();
+
+    void on_EditButton_clicked();
 
 private:
     Ui::EditSalle *ui;

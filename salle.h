@@ -30,6 +30,8 @@ private slots:
 
     void on_SearchButton_clicked();
 
+    void on_RefreshTable_clicked();
+
 private:
     Ui::Salle *ui;
     QSqlDatabase db;

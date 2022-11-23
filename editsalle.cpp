@@ -1,6 +1,8 @@
 #include "editsalle.h"
 #include "ui_editsalle.h"
 #include <QMessageBox>
+#include <QDebug>
+#include <QSqlQueryModel>
 
 EditSalle::EditSalle(QWidget *parent) :
     QDialog(parent),
@@ -23,6 +25,7 @@ EditSalle::~EditSalle()
     delete ui;
 }
 
+// Search by Salle_ID
 void EditSalle::on_SearchButton_clicked()
 {
     QString Salle_ID,Cycle,Filiere,Semestre,NumeroSalle;
@@ -62,19 +65,43 @@ void EditSalle::on_SearchButton_clicked()
 
     }
     else QMessageBox::warning(this,"Salle_ID","Veuillez insérer l'ID de la salle!");
-
-
 }
-void EditSalle::on_AddButton_clicked()
+
+// Edit data
+void EditSalle::on_EditButton_clicked()
 {
 
+    QString Salle_ID,Cycle,Filiere,Semestre,NumeroSalle;
+
+    if(!db.isOpen()){
+            qDebug()<<"Failed";
+            return;
+        }
+
+    Salle_ID = ui->Salle_ID->text();
+    Cycle = ui->Cycle->text();
+    Filiere = ui->Filiere->text();
+    Semestre = ui->Semestre->text();
+    NumeroSalle = ui->NumeroSalle->text();
+
+    if(Cycle=="" || Filiere=="" ||Semestre=="" || NumeroSalle==""){
+        QMessageBox::warning(this,"Signup","Veuillez remplir tout les champs s'il vous plaît.");
+    }
+
+    else{
+
+        QSqlQueryModel *model = new QSqlQueryModel();
+        QSqlQuery *qry = new QSqlQuery() ;
+        qry->prepare("UPDATE Salle SET Cycle='"+Cycle+"' ,Filiere ='"+Filiere+"',Semestre ='"+Semestre+"',Numero_Salle='"+NumeroSalle+"' WHERE Salle_ID ='"+Salle_ID+"'");
+        qry->exec();
+        QMessageBox::information(this,"valider","Salle modifiée avec succès");
+
+
+        qDebug()<<(model->rowCount());
+        this->hide();
+    }
 }
-
-
 void EditSalle::on_SalleReturn_clicked()
 {
 this->hide();
 }
-
-
-

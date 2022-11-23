@@ -25,7 +25,7 @@
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="AddButton">
+   <widget class="QPushButton" name="EditButton">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -97,7 +97,7 @@ QPushButton:pressed
      <string>Retour</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>60</x>

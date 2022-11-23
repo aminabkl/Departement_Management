@@ -153,7 +153,7 @@ QPushButton:pressed
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -215,6 +215,43 @@ QPushButton:pressed
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="RefreshTable">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>80</y>
+      <width>152</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Refresh Table</string>
+    </property>
    </widget>
   </widget>
   <widget class="QPushButton" name="LogoutButton">

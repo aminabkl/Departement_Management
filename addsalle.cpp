@@ -43,11 +43,10 @@ void AddSalle::on_AddButton_clicked()
     int count = 0;
     while(search.next())
         count++;
+    if(count>=1)
+        QMessageBox::warning(this, "Failed", "La salle existe deja!");
 
-if(count>=1)
-    QMessageBox::warning(this, "Failed", "La salle existe deja!");
-
-else {
+    else {
         QSqlQuery *qry = new QSqlQuery() ;
         qry->prepare("INSERT INTO Salle (Cycle,Filiere,Semestre,Numero_Salle)" "VALUES (?,?,?,?);");
         qry->addBindValue(Cycle);

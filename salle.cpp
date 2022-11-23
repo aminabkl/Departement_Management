@@ -120,3 +120,17 @@ void Salle::on_SearchButton_clicked()
         ui->SalleTable->setModel(model);
     }
 }
+
+void Salle::on_RefreshTable_clicked()
+{
+    QSqlQueryModel *model = new QSqlQueryModel();
+    QSqlQuery *qry = new QSqlQuery(db);
+
+    qry->prepare("SELECT * FROM Salle");
+    qry->exec();
+    model->setQuery(std::move(*qry));
+    ui->SalleTable->setModel(model);
+
+    qDebug()<<(model->rowCount());
+}
+
