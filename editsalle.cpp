@@ -89,15 +89,11 @@ void EditSalle::on_EditButton_clicked()
     }
 
     else{
-
-        QSqlQueryModel *model = new QSqlQueryModel();
         QSqlQuery *qry = new QSqlQuery() ;
         qry->prepare("UPDATE Salle SET Cycle='"+Cycle+"' ,Filiere ='"+Filiere+"',Semestre ='"+Semestre+"',Numero_Salle='"+NumeroSalle+"' WHERE Salle_ID ='"+Salle_ID+"'");
         qry->exec();
         QMessageBox::information(this,"valider","Salle modifiée avec succès");
-
-
-        qDebug()<<(model->rowCount());
+\
         this->hide();
     }
 }

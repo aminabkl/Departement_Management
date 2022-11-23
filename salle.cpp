@@ -2,6 +2,7 @@
 #include "ui_salle.h"
 #include "login.h"
 #include "addsalle.h"
+#include "deletesalle.h"
 #include "editsalle.h"
 #include <QMessageBox>
 #include <QDebug>
@@ -74,7 +75,8 @@ void Salle::on_EditButton_clicked()
 // Supprimer
 void Salle::on_DeleteButton_clicked()
 {
-
+    DeleteSalle DeleteSalle;
+    DeleteSalle.exec();
 }
 
 // chercher dans le tableau
