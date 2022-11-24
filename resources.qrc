@@ -2,5 +2,6 @@
     <qresource prefix="/resources">
         <file>img/FST-Tanger.png</file>
         <file>img/UAE-Logo.png</file>
+        <file>img/user_logo.png</file>
     </qresource>
 </RCC>

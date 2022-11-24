@@ -10,26 +10,32 @@ CONFIG += c++17
 
 SOURCES += \
     addsalle.cpp \
+    coordinateur.cpp \
     deletesalle.cpp \
     editsalle.cpp \
     main.cpp \
     login.cpp \
+    navmenu.cpp \
     salle.cpp \
     signup.cpp
 
 HEADERS += \
     addsalle.h \
+    coordinateur.h \
     deletesalle.h \
     editsalle.h \
     login.h \
+    navmenu.h \
     salle.h \
     signup.h
 
 FORMS += \
     addsalle.ui \
+    coordinateur.ui \
     deletesalle.ui \
     editsalle.ui \
     login.ui \
+    navmenu.ui \
     salle.ui \
     signup.ui
 

@@ -1,22 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Salle</class>
- <widget class="QDialog" name="Salle">
+ <class>Coordinateur</class>
+ <widget class="QDialog" name="Coordinateur">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>664</width>
-    <height>577</height>
+    <width>683</width>
+    <height>591</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGroupBox" name="groupBox">
+  <widget class="QPushButton" name="ReturnMenu">
    <property name="geometry">
     <rect>
      <x>30</x>
+     <y>540</y>
+     <width>151</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Return To menu</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
      <y>20</y>
      <width>601</width>
      <height>501</height>
@@ -153,7 +189,7 @@ QPushButton:pressed
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="layoutWidget_2">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -253,42 +289,6 @@ QPushButton:pressed
      <string>Refresh Table</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QPushButton" name="ReturnMenu">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>540</y>
-     <width>151</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
-height: 25px;
-font-size:13px;
-}
-QPushButton:hover:!pressed
-{
-	background-color: rgb(179, 216, 255);
-}
-QPushButton:pressed
-{
-              transition: 0.9s; 
-}</string>
-   </property>
-   <property name="text">
-    <string>Return To menu</string>
-   </property>
   </widget>
  </widget>
  <resources/>

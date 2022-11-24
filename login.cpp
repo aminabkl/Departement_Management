@@ -2,6 +2,7 @@
 #include "ui_login.h"
 #include "signup.h"
 #include "salle.h"
+#include "navmenu.h"
 #include <QMessageBox>
 #include <QPixmap>
 
@@ -56,8 +57,8 @@ void Login::on_loginButton_clicked()
                     }
                     if(count==1 ){
                            this->hide();
-                               Salle Salle;
-                               Salle.exec();
+                               NavMenu NavMenu;
+                               NavMenu.exec();
                     }
 
                    else{

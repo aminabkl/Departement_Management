@@ -20,8 +20,6 @@ public:
 
 private slots:
 
-    void on_LogoutButton_clicked();
-
     void on_AddButton_clicked();
 
     void on_EditButton_clicked();
@@ -31,6 +29,8 @@ private slots:
     void on_SearchButton_clicked();
 
     void on_RefreshTable_clicked();
+
+    void on_ReturnMenu_clicked();
 
 private:
     Ui::Salle *ui;

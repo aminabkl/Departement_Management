@@ -4,6 +4,7 @@
 #include "addsalle.h"
 #include "deletesalle.h"
 #include "editsalle.h"
+#include "navmenu.h"
 #include <QMessageBox>
 #include <QDebug>
 #include <QSqlQueryModel>
@@ -49,14 +50,6 @@ Salle::~Salle()
     delete ui;
 }
 
-
-
-void Salle::on_LogoutButton_clicked()
-{
-    this->hide();
-    Login Login;
-    Login.exec();
-}
 
 // Ajouter
 void Salle::on_AddButton_clicked()
@@ -134,5 +127,13 @@ void Salle::on_RefreshTable_clicked()
     ui->SalleTable->setModel(model);
 
     qDebug()<<(model->rowCount());
+}
+
+
+void Salle::on_ReturnMenu_clicked()
+{
+    this->hide();
+    NavMenu NavMenu;
+    NavMenu.exec();
 }
 
