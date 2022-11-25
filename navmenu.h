@@ -26,6 +26,8 @@ private slots:
 
     void on_LogoutButton_clicked();
 
+    void on_GoCoord_clicked();
+
 private:
     Ui::NavMenu *ui;
     QSqlDatabase db;

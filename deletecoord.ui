@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeleteCoord</class>
+ <widget class="QDialog" name="DeleteCoord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>557</width>
+    <height>312</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>471</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="DeleteButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>130</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Supprimer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SalleReturn">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>170</y>
+      <width>150</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Retour</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>51</x>
+      <y>51</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Coord_ID</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Coord_ID">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 2px;
+height:25px;
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SearchButton">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+width:90px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+       </property>
+       <property name="text">
+        <string>Rechercher</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

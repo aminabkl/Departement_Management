@@ -85,7 +85,7 @@ void EditSalle::on_EditButton_clicked()
     NumeroSalle = ui->NumeroSalle->text();
 
     if(Cycle=="" || Filiere=="" ||Semestre=="" || NumeroSalle==""){
-        QMessageBox::warning(this,"Signup","Veuillez remplir tout les champs s'il vous plaît.");
+        QMessageBox::warning(this,"Salle","Veuillez remplir tout les champs s'il vous plaît.");
     }
 
     else{
@@ -93,7 +93,7 @@ void EditSalle::on_EditButton_clicked()
         qry->prepare("UPDATE Salle SET Cycle='"+Cycle+"' ,Filiere ='"+Filiere+"',Semestre ='"+Semestre+"',Numero_Salle='"+NumeroSalle+"' WHERE Salle_ID ='"+Salle_ID+"'");
         qry->exec();
         QMessageBox::information(this,"valider","Salle modifiée avec succès");
-\
+
         this->hide();
     }
 }

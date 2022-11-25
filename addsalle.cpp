@@ -31,7 +31,7 @@ void AddSalle::on_AddButton_clicked()
     Semestre = ui->Semestre->text();
     NumeroSalle = ui->NumeroSalle->text();
     if(Cycle=="" || Filiere=="" ||Semestre=="" || NumeroSalle==""){
-        QMessageBox::warning(this,"Signup","Veuillez remplir tout les champs s'il vous plaît.");
+        QMessageBox::warning(this,"Salle","Veuillez remplir tout les champs s'il vous plaît.");
     }
     else{
 

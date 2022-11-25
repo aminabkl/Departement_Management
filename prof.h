@@ -1,24 +1,23 @@
-#ifndef COORDINATEUR_H
-#define COORDINATEUR_H
+#ifndef PROF_H
+#define PROF_H
 
 #include <QDialog>
 #include <QtSql>
 #include <QtDebug>
 #include <QSqlQuery>
-
 namespace Ui {
-class Coordinateur;
+class prof;
 }
 
-class Coordinateur : public QDialog
+class prof : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Coordinateur(QWidget *parent = nullptr);
-    ~Coordinateur();
-
+    explicit prof(QWidget *parent = nullptr);
+    ~prof();
 private slots:
+
     void on_AddButton_clicked();
 
     void on_EditButton_clicked();
@@ -32,8 +31,8 @@ private slots:
     void on_ReturnMenu_clicked();
 
 private:
-    Ui::Coordinateur *ui;
+    Ui::prof *ui;
     QSqlDatabase db;
 };
 
-#endif // COORDINATEUR_H
+#endif // PROF_H

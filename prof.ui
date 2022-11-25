@@ -1,59 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Coordinateur</class>
- <widget class="QDialog" name="Coordinateur">
+ <class>prof</class>
+ <widget class="QDialog" name="prof">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>683</width>
-    <height>591</height>
+    <width>715</width>
+    <height>581</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="ReturnMenu">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>540</y>
-     <width>151</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
-height: 25px;
-font-size:13px;
-}
-QPushButton:hover:!pressed
-{
-	background-color: rgb(179, 216, 255);
-}
-QPushButton:pressed
-{
-              transition: 0.9s; 
-}</string>
-   </property>
-   <property name="text">
-    <string>Return To menu</string>
-   </property>
-  </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>40</x>
-     <y>20</y>
+     <x>50</x>
+     <y>30</y>
      <width>601</width>
      <height>501</height>
     </rect>
@@ -66,9 +30,9 @@ QPushButton:pressed
     </font>
    </property>
    <property name="title">
-    <string>La répartition des coordinateurs du département</string>
+    <string>La répartition des professeurs</string>
    </property>
-   <widget class="QTableView" name="CoordTable">
+   <widget class="QTableView" name="ProfTable">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -85,7 +49,7 @@ QPushButton:pressed
      </font>
     </property>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QWidget" name="layoutWidget_3">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -94,7 +58,7 @@ QPushButton:pressed
       <height>27</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
       <widget class="QPushButton" name="AddButton">
        <property name="font">
@@ -131,6 +95,7 @@ QPushButton:pressed
        <property name="font">
         <font>
          <pointsize>-1</pointsize>
+         <italic>false</italic>
          <bold>true</bold>
         </font>
        </property>
@@ -189,7 +154,7 @@ QPushButton:pressed
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget_2">
+   <widget class="QWidget" name="layoutWidget_4">
     <property name="geometry">
      <rect>
       <x>140</x>
@@ -198,7 +163,7 @@ QPushButton:pressed
       <height>41</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
      <item>
       <widget class="QLineEdit" name="SearchValue">
        <property name="font">
@@ -287,6 +252,45 @@ QPushButton:pressed
     </property>
     <property name="text">
      <string>Refresh Table</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ReturnMenu">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>470</y>
+      <width>151</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>7</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff;
+border-radius:2px;
+background-color: rgb(159, 191, 226);
+height: 25px;
+font-size:13px;
+}
+QPushButton:hover:!pressed
+{
+	background-color: rgb(179, 216, 255);
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+    </property>
+    <property name="text">
+     <string>Return To menu</string>
     </property>
    </widget>
   </widget>

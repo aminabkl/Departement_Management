@@ -47,6 +47,7 @@ void DeleteSalle::on_SearchButton_clicked()
             QMessageBox::warning(this, "Not Found", "La salle ne se trouve pas!");
             ui->Salle_ID->clear();
         }
+        else QMessageBox::information(this, "Found", "La salle est selectionnée!");
 }
 }
 
