@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>664</width>
-    <height>577</height>
+    <width>661</width>
+    <height>552</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -29,6 +32,9 @@
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:#00456D ; </string>
+   </property>
    <property name="title">
     <string>La répartition des salles du département</string>
    </property>
@@ -36,7 +42,7 @@
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>140</y>
+      <y>130</y>
       <width>541</width>
       <height>261</height>
      </rect>
@@ -48,17 +54,30 @@
       <bold>false</bold>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: black;</string>
+    </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>430</y>
+      <x>50</x>
+      <y>410</y>
       <width>471</width>
       <height>27</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">image: url(:/resources/img/10.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
      <item>
       <widget class="QPushButton" name="AddButton">
        <property name="font">
@@ -70,15 +89,17 @@
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -87,6 +108,16 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>Ajouter</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">image: url(:/resources/img/12.png);</string>
+       </property>
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
@@ -100,15 +131,17 @@ QPushButton:pressed
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -117,6 +150,16 @@ QPushButton:pressed
        </property>
        <property name="text">
         <string>Modifier</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">image: url(:/resources/img/11.png);</string>
+       </property>
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </item>
@@ -131,15 +174,17 @@ QPushButton:pressed
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -156,10 +201,10 @@ QPushButton:pressed
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>70</y>
-      <width>271</width>
-      <height>41</height>
+      <x>70</x>
+      <y>90</y>
+      <width>371</width>
+      <height>31</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -175,10 +220,13 @@ QPushButton:pressed
        <property name="styleSheet">
         <string notr="true">QLineEdit{
 	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
+	 border: 2px  solid #8AB9D3 ;
+     border-radius: 10px;
+ 
 height: 25px;
-}</string>
+}
+
+</string>
        </property>
       </widget>
      </item>
@@ -193,16 +241,17 @@ height: 25px;
        </property>
        <property name="styleSheet">
         <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
-width: 100px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -219,9 +268,9 @@ QPushButton:pressed
    <widget class="QPushButton" name="RefreshTable">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>80</y>
-      <width>152</width>
+      <x>440</x>
+      <y>50</y>
+      <width>141</width>
       <height>25</height>
      </rect>
     </property>
@@ -234,15 +283,16 @@ QPushButton:pressed
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -250,45 +300,62 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Refresh Table</string>
+     <string>Rafraîchir la table</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QPushButton" name="ReturnMenu">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>540</y>
-     <width>151</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/resources/img/5.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ReturnMenu">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>181</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
               transition: 0.9s; 
 }</string>
-   </property>
-   <property name="text">
-    <string>Return To menu</string>
-   </property>
+    </property>
+    <property name="text">
+     <string>Retour à la page d'accueil</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

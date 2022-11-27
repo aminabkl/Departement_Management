@@ -63,6 +63,7 @@ void DeleteSalle::on_DeleteButton_clicked()
     qry->prepare("DELETE FROM Salle WHERE Salle_ID = '"+Salle_ID+"'");
     qry->exec();
     QMessageBox::information(this, "Found", "La salle a été supprimée avec succès!");
+    this->hide();
 }
 }
 

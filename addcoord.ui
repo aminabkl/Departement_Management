@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>554</width>
-    <height>494</height>
+    <width>528</width>
+    <height>475</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <rect>
      <x>30</x>
      <y>50</y>
-     <width>471</width>
+     <width>461</width>
      <height>401</height>
     </rect>
    </property>
@@ -28,8 +28,8 @@
    <widget class="QPushButton" name="AddButton">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>310</y>
+      <x>150</x>
+      <y>300</y>
       <width>150</width>
       <height>25</height>
      </rect>
@@ -42,15 +42,17 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -64,8 +66,8 @@ QPushButton:pressed
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>60</y>
+      <x>60</x>
+      <y>40</y>
       <width>331</width>
       <height>221</height>
      </rect>
@@ -99,7 +101,12 @@ QPushButton:pressed
 	background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
         </widget>
@@ -134,7 +141,12 @@ height:25px;
 	background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
         </widget>
@@ -169,7 +181,12 @@ height:25px;
 	background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
          <property name="echoMode">
@@ -204,10 +221,15 @@ height:25px;
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
+		background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
          <property name="echoMode">
@@ -222,8 +244,8 @@ height:25px;
    <widget class="QPushButton" name="CoordReturn">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>350</y>
+      <x>150</x>
+      <y>340</y>
       <width>150</width>
       <height>25</height>
      </rect>
@@ -236,15 +258,17 @@ height:25px;
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -261,7 +285,31 @@ QPushButton:pressed
     <rect>
      <x>40</x>
      <y>20</y>
-     <width>241</width>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <italic>true</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:blue;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>341</width>
      <height>51</height>
     </rect>
    </property>
@@ -272,8 +320,11 @@ QPushButton:pressed
      <bold>true</bold>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color:#00456D ; </string>
+   </property>
    <property name="text">
-    <string>Ajouter un coordinateur</string>
+    <string>Ajouter un professeur</string>
    </property>
   </widget>
  </widget>

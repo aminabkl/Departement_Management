@@ -6,12 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>413</width>
-    <height>526</height>
+    <width>290</width>
+    <height>370</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> QDialog{ 
+ 
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+ 
+ 
+ };
+ </string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="enabled">
@@ -19,14 +33,15 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>190</y>
-     <width>311</width>
-     <height>301</height>
+     <x>10</x>
+     <y>50</y>
+     <width>271</width>
+     <height>311</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Poppins</family>
      <pointsize>16</pointsize>
      <italic>true</italic>
      <bold>true</bold>
@@ -39,18 +54,28 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(0, 0, 0);</string>
+    <string notr="true"> 
+QGroupBox {
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+background-color:   #00456D  ;
+ border-radius:10px;
+}
+ </string>
    </property>
    <property name="title">
-    <string>Se connecter</string>
+    <string/>
    </property>
    <widget class="QPushButton" name="Signup_Button">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>240</y>
-      <width>150</width>
-      <height>25</height>
+      <x>40</x>
+      <y>250</y>
+      <width>201</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -67,15 +92,16 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:rgb(204, 229, 255);
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -89,10 +115,10 @@ QPushButton:pressed
    <widget class="QPushButton" name="loginButton">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>199</y>
-      <width>150</width>
-      <height>25</height>
+      <x>40</x>
+      <y>210</y>
+      <width>201</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -107,17 +133,21 @@ QPushButton:pressed
       <bold>true</bold>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:rgb(204, 229, 255);
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -128,123 +158,167 @@ QPushButton:pressed
      <string>Se connecter</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>40</y>
+      <width>120</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QGroupBox{
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="title">
+     <string>SE CONNECTER</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>80</y>
-      <width>251</width>
-      <height>91</height>
+      <y>110</y>
+      <width>201</width>
+      <height>25</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <property name="spacing">
-      <number>20</number>
-     </property>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>E-mail</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="email">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QLineEdit{ 
+color:white;
+ 
+ 
+border:none;
+background:transparent;
+border-bottom: 1px solid #B5D9ED; 
 }</string>
-         </property>
-         <property name="frame">
-          <bool>true</bool>
-         </property>
-         <property name="echoMode">
-          <enum>QLineEdit::Normal</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="font">
-          <font>
-           <pointsize>9</pointsize>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Mot de passe</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="password">
-         <property name="maximumSize">
-          <size>
-           <width>16777215</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>160</y>
+      <width>201</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>25</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QLineEdit{ 
+ 
+color:white;
+ 
+border:none;
+background:transparent;
+border-bottom: 1px solid #B5D9ED; 
 }</string>
-         </property>
-         <property name="frame">
-          <bool>true</bool>
-         </property>
-         <property name="echoMode">
-          <enum>QLineEdit::Password</enum>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>91</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+border-bottom:1px solid;
+color:rgb(255, 255, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string>E-mail</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>81</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Mot de passe</string>
+    </property>
    </widget>
   </widget>
-  <widget class="QLabel" name="FstLogo">
+  <widget class="QPushButton" name="loginButton_2">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>100</width>
-     <height>100</height>
+     <x>100</x>
+     <y>10</y>
+     <width>81</width>
+     <height>61</height>
     </rect>
    </property>
-   <property name="text">
-    <string/>
+   <property name="maximumSize">
+    <size>
+     <width>250</width>
+     <height>16777215</height>
+    </size>
    </property>
-  </widget>
-  <widget class="QLabel" name="UniLogo">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>30</y>
-     <width>100</width>
-     <height>100</height>
-    </rect>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QPushButton{
+color: #ffffff;
+image: url(:/resources/img/user_logo.png);
+img-color:rgb(0, 170, 255);
+border-radius:30px;            
+height: 25px;
+font-size:13px;
+}
+ </string>
    </property>
    <property name="text">
     <string/>
@@ -252,7 +326,6 @@ QPushButton:pressed
   </widget>
  </widget>
  <tabstops>
-  <tabstop>password</tabstop>
   <tabstop>loginButton</tabstop>
   <tabstop>Signup_Button</tabstop>
  </tabstops>

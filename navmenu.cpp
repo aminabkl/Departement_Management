@@ -13,8 +13,18 @@ NavMenu::NavMenu(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //database coonection
+    // LOGO
+    QPixmap FstLogo(":/resources/img/FST-Tanger.png");
+    int w1 = ui->FstLogo->width();
+    int h1 = ui->FstLogo->height();
+    ui->FstLogo->setPixmap(FstLogo.scaled(w1,h1,Qt::KeepAspectRatio));
 
+    QPixmap UniLogo(":/resources/img/UAE-Logo.png");
+    int w2 = ui->UniLogo->width();
+    int h2 = ui->UniLogo->height();
+    ui->UniLogo->setPixmap(UniLogo.scaled(w2,h2,Qt::KeepAspectRatio));
+
+    //database coonection
     db = QSqlDatabase::addDatabase("QSQLITE");
         db.setDatabaseName("C:/Users/lenovo/Documents/QT/DepartmentDB.db");
         if(!db.open()){

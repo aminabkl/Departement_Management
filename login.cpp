@@ -12,16 +12,6 @@ Login::Login(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // LOGO
-    QPixmap FstLogo(":/resources/img/FST-Tanger.png");
-    int w1 = ui->FstLogo->width();
-    int h1 = ui->FstLogo->height();
-    ui->FstLogo->setPixmap(FstLogo.scaled(w1,h1,Qt::KeepAspectRatio));
-
-    QPixmap UniLogo(":/resources/img/UAE-Logo.png");
-    int w2 = ui->UniLogo->width();
-    int h2 = ui->UniLogo->height();
-    ui->UniLogo->setPixmap(UniLogo.scaled(w2,h2,Qt::KeepAspectRatio));
 
     // Database connection
     db = QSqlDatabase::addDatabase("QSQLITE");
@@ -49,7 +39,7 @@ void Login::on_loginButton_clicked()
             return;
         }
     QSqlQuery qry;
-    if(qry.exec("SELECT * FROM Login WHERE Email='"+Email+"'and Password='"+Password+"'" )){
+    if(qry.exec("SELECT * FROM Utilisateur WHERE Email='"+Email+"'and Password='"+Password+"'" )){
         int count=0;
                     while(qry.next()){
                         count++;
@@ -65,6 +55,8 @@ void Login::on_loginButton_clicked()
                     QMessageBox::warning(this,"Login","Incorrect, Vérifier votre email ou votre mot de passe");
 }
 }
+   else
+        QMessageBox::warning(this,"Login","Veuillez remplir tout les champs s'il vous plaît.");
 
 }
 

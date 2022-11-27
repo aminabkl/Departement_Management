@@ -39,7 +39,7 @@ void Signup::on_SignupButton_clicked()
 
     //cherche si le compte existe
         auto qry = QSqlQuery(db);
-        QString searchAcc = {"SELECT Email FROM Login WHERE Email='"+Email+"'" };
+        QString searchAcc = {"SELECT Email FROM Utilisateur WHERE Email='"+Email+"'" };
         if(!qry.exec(searchAcc))
             qDebug() << "Cannot select";
         int count = 0;
@@ -52,7 +52,7 @@ void Signup::on_SignupButton_clicked()
     else {
         if (Password == Verify_pass){
             QSqlQuery *qry = new QSqlQuery() ;
-            qry->prepare("INSERT INTO Login (Username,Email,Password)" "VALUES (?,?,?);");
+            qry->prepare("INSERT INTO Utilisateur (Username,Email,Password)" "VALUES (?,?,?);");
             qry->addBindValue(Username);
             qry->addBindValue(Email);
             qry->addBindValue(Password);

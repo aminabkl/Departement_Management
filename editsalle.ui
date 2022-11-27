@@ -42,15 +42,17 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -78,15 +80,17 @@ QPushButton:pressed
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -94,7 +98,7 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Retour</string>
+     <string> Retour</string>
     </property>
    </widget>
    <widget class="QWidget" name="layoutWidget">
@@ -132,10 +136,15 @@ QPushButton:pressed
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
+		background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
         </widget>
@@ -150,16 +159,17 @@ height:25px;
          </property>
          <property name="styleSheet">
           <string notr="true">QPushButton{
-color: #ffffff;
-border-radius:2px;
-background-color: rgb(159, 191, 226);
+color: #ffffff; 
+background-color: #8AB9D3;
 height: 25px;
-width:90px;
 font-size:13px;
+border-radius:10px;
+width:100px;
 }
 QPushButton:hover:!pressed
 {
-	background-color: rgb(179, 216, 255);
+	background-color:#B9CCD6;
+cursor:pointer;
 }
 QPushButton:pressed
 {
@@ -198,10 +208,15 @@ QPushButton:pressed
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
+		background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
         </widget>
@@ -233,10 +248,15 @@ height:25px;
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
+		background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
          <property name="echoMode">
@@ -271,10 +291,15 @@ height:25px;
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
+		background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
          <property name="echoMode">
@@ -309,10 +334,15 @@ height:25px;
          </property>
          <property name="styleSheet">
           <string notr="true">QLineEdit{
-	background-color: rgb(255, 255, 255);
+			background-color: rgb(255, 255, 255);
 	 border: 1px  solid;
      border-radius: 2px;
+background:transparent;
+border-top: 10px solid rrgb(255, 255, 255);
+border:none;
+border-bottom: 1px solid rgb(103, 103, 103);
 height:25px;
+color:black;
 }</string>
          </property>
          <property name="echoMode">
@@ -330,7 +360,7 @@ height:25px;
     <rect>
      <x>50</x>
      <y>20</y>
-     <width>331</width>
+     <width>381</width>
      <height>51</height>
     </rect>
    </property>
@@ -340,6 +370,9 @@ height:25px;
      <italic>true</italic>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#00456D ; </string>
    </property>
    <property name="text">
     <string>Modifier les données de la salle</string>

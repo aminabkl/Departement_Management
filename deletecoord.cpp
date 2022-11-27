@@ -52,6 +52,7 @@ void DeleteCoord::on_DeleteButton_clicked()
     qry->prepare("DELETE FROM Coordinateur WHERE Coord_ID = '"+Coord_ID+"'");
     qry->exec();
     QMessageBox::information(this, "Found", "La coordinateur a été supprimé avec succès!");
+    this->hide();
 }
 }
 

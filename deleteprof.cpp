@@ -35,6 +35,7 @@ void deleteprof::on_DeleteButton_clicked()
     qry->prepare("DELETE FROM Prof WHERE Prof_ID = '"+Prof_ID+"'");
     qry->exec();
     QMessageBox::information(this, "Found", "La salle a été supprimée avec succès!");
+    this->hide();
 }
 }
 
