@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>315</width>
-    <height>364</height>
+    <height>606</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,7 +22,7 @@
      <x>-40</x>
      <y>-20</y>
      <width>421</width>
-     <height>371</height>
+     <height>641</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -34,10 +34,10 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>30</y>
-      <width>291</width>
-      <height>341</height>
+      <x>30</x>
+      <y>20</y>
+      <width>341</width>
+      <height>621</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -60,24 +60,23 @@ background-color:   #00456D  ;
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>40</y>
+       <y>150</y>
        <width>121</width>
        <height>48</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>-1</pointsize>
        <italic>false</italic>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
- 
 color:rgb(255, 255, 255);
-border-buttom: 10px solid rrgb(255, 255, 255);
- 
+font:13px;
+font-weight:600;
 }</string>
      </property>
      <property name="text">
@@ -88,23 +87,20 @@ border-buttom: 10px solid rrgb(255, 255, 255);
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>70</y>
+       <y>190</y>
        <width>191</width>
        <height>27</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLineEdit{
+      <string notr="true"> QLineEdit{ 
 color:white;
-	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
-background:transparent;
-border-top: 10px solid rrgb(255, 255, 255);
 border:none;
-height:25px;
- border-radius:10px;
-  border-bottom: 1px solid #8AB9D3;
+background:transparent;
+border-bottom: 1px solid #B5D9ED; 
+font:13px;
+font-weight:600;
+
 }</string>
      </property>
     </widget>
@@ -112,22 +108,23 @@ height:25px;
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>190</y>
+       <y>370</y>
        <width>201</width>
        <height>48</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>-1</pointsize>
        <italic>false</italic>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
- 
 color:rgb(255, 255, 255);
+font:13px;
+font-weight:600;
 }</string>
      </property>
      <property name="text">
@@ -138,22 +135,23 @@ color:rgb(255, 255, 255);
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>90</y>
+       <y>220</y>
        <width>51</width>
        <height>49</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>-1</pointsize>
        <italic>false</italic>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
- 
 color:rgb(255, 255, 255);
+font:13px;
+font-weight:600;
 }</string>
      </property>
      <property name="text">
@@ -164,22 +162,23 @@ color:rgb(255, 255, 255);
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>140</y>
+       <y>290</y>
        <width>111</width>
        <height>48</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>10</pointsize>
+       <pointsize>-1</pointsize>
        <italic>false</italic>
        <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">QLabel{
- 
 color:rgb(255, 255, 255);
+font:13px;
+font-weight:600;
 }</string>
      </property>
      <property name="text">
@@ -190,22 +189,20 @@ color:rgb(255, 255, 255);
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>170</y>
+       <y>330</y>
        <width>191</width>
        <height>27</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLineEdit{
+      <string notr="true"> QLineEdit{ 
 color:white;
-	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
-background:transparent;
-border-top: 10px solid rrgb(255, 255, 255);
 border:none;
-border-bottom: 1px solid #8AB9D3;
-height:25px;
+background:transparent;
+border-bottom: 1px solid #B5D9ED; 
+font:13px;
+font-weight:600;
+
 }</string>
      </property>
      <property name="echoMode">
@@ -216,82 +213,52 @@ height:25px;
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>220</y>
+       <y>410</y>
        <width>191</width>
        <height>27</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLineEdit{
+      <string notr="true"> QLineEdit{ 
 color:white;
-	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
-background:transparent;
-border-top: 10px solid rrgb(255, 255, 255);
 border:none;
-border-bottom: 1px solid #8AB9D3;
-height:25px;
+background:transparent;
+border-bottom: 1px solid #B5D9ED; 
+font:13px;
+font-weight:600;
+
 }</string>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::Password</enum>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>10</y>
-       <width>201</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>16</pointsize>
-       <italic>true</italic>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QLabel{
- 
-color:rgb(255, 255, 255);
-}</string>
-     </property>
-     <property name="text">
-      <string>Créer un compte</string>
-     </property>
-    </widget>
     <widget class="QLineEdit" name="Email">
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>120</y>
+       <y>260</y>
        <width>191</width>
        <height>27</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QLineEdit{
+      <string notr="true"> QLineEdit{ 
 color:white;
-	background-color: rgb(255, 255, 255);
-	 border: 1px  solid;
-     border-radius: 2px;
-background:transparent;
- 
 border:none;
-border-bottom: 1px solid #8AB9D3;
-height:25px;
+background:transparent;
+border-bottom: 1px solid #B5D9ED; 
+font:13px;
+font-weight:600;
+
 }</string>
      </property>
     </widget>
     <widget class="QPushButton" name="SignupButton">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>260</y>
+       <x>50</x>
+       <y>480</y>
        <width>221</width>
        <height>31</height>
       </rect>
@@ -327,8 +294,8 @@ QPushButton:pressed
     <widget class="QPushButton" name="LoginReturn">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>300</y>
+       <x>50</x>
+       <y>530</y>
        <width>221</width>
        <height>31</height>
       </rect>
@@ -359,6 +326,64 @@ QPushButton:pressed
      </property>
      <property name="text">
       <string>Retour</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginButton_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+ QPushButton{
+
+color: #ffffff;
+image: url(:/resources/img/user.png);
+img-color:rgb(0, 170, 255);
+border-radius:30px;            
+height: 25px;
+font-size:13px;
+}
+ </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>100</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QGroupBox{
+color:rgb(255, 255, 255);
+font:16px;
+font-weight:bold;
+}</string>
+     </property>
+     <property name="title">
+      <string>Créer un compte</string>
      </property>
     </widget>
    </widget>

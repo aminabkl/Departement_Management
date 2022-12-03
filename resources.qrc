@@ -12,5 +12,6 @@
         <file>img/profs.png</file>
         <file>img/salles.png</file>
         <file>img/goout.png</file>
+        <file>img/user.png</file>
     </qresource>
 </RCC>

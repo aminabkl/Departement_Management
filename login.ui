@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>290</width>
-    <height>370</height>
+    <width>269</width>
+    <height>436</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,10 +33,10 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>50</y>
-     <width>271</width>
-     <height>311</height>
+     <x>-10</x>
+     <y>0</y>
+     <width>361</width>
+     <height>451</height>
     </rect>
    </property>
    <property name="font">
@@ -72,8 +72,8 @@ background-color:   #00456D  ;
    <widget class="QPushButton" name="Signup_Button">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>250</y>
+      <x>50</x>
+      <y>370</y>
       <width>201</width>
       <height>31</height>
      </rect>
@@ -115,8 +115,8 @@ QPushButton:pressed
    <widget class="QPushButton" name="loginButton">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>210</y>
+      <x>50</x>
+      <y>330</y>
       <width>201</width>
       <height>31</height>
      </rect>
@@ -161,15 +161,17 @@ QPushButton:pressed
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>40</y>
-      <width>120</width>
+      <x>70</x>
+      <y>100</y>
+      <width>151</width>
       <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true"> QGroupBox{
 color:rgb(255, 255, 255);
+font:16px;
+font-weight:bold;
 }</string>
     </property>
     <property name="title">
@@ -179,8 +181,8 @@ color:rgb(255, 255, 255);
    <widget class="QLineEdit" name="email">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>110</y>
+      <x>40</x>
+      <y>180</y>
       <width>201</width>
       <height>25</height>
      </rect>
@@ -194,11 +196,12 @@ color:rgb(255, 255, 255);
     <property name="styleSheet">
      <string notr="true"> QLineEdit{ 
 color:white;
- 
- 
 border:none;
 background:transparent;
 border-bottom: 1px solid #B5D9ED; 
+font:13px;
+font-weight:600;
+
 }</string>
     </property>
     <property name="frame">
@@ -211,8 +214,8 @@ border-bottom: 1px solid #B5D9ED;
    <widget class="QLineEdit" name="password">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>160</y>
+      <x>40</x>
+      <y>260</y>
       <width>201</width>
       <height>25</height>
      </rect>
@@ -225,12 +228,13 @@ border-bottom: 1px solid #B5D9ED;
     </property>
     <property name="styleSheet">
      <string notr="true"> QLineEdit{ 
- 
 color:white;
- 
 border:none;
 background:transparent;
 border-bottom: 1px solid #B5D9ED; 
+font:13px;
+font-weight:600;
+
 }</string>
     </property>
     <property name="frame">
@@ -243,22 +247,24 @@ border-bottom: 1px solid #B5D9ED;
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>90</y>
+      <x>40</x>
+      <y>150</y>
       <width>91</width>
       <height>27</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{
-border-bottom:1px solid;
 color:rgb(255, 255, 255);
+font:13px;
+font-weight:600;
 }</string>
     </property>
     <property name="text">
@@ -268,61 +274,68 @@ color:rgb(255, 255, 255);
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>140</y>
-      <width>81</width>
+      <x>40</x>
+      <y>230</y>
+      <width>91</width>
       <height>28</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>9</pointsize>
+      <pointsize>-1</pointsize>
+      <italic>false</italic>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:rgb(255, 255, 255);</string>
+     <string notr="true">QLabel{
+color:rgb(255, 255, 255);
+font:13px;
+font-weight:600;
+}</string>
     </property>
     <property name="text">
      <string>Mot de passe</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QPushButton" name="loginButton_2">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>10</y>
-     <width>81</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>250</width>
-     <height>16777215</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"> QPushButton{
+   <widget class="QPushButton" name="loginButton_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>81</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>250</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+ QPushButton{
+
 color: #ffffff;
-image: url(:/resources/img/user_logo.png);
+image: url(:/resources/img/user.png);
 img-color:rgb(0, 170, 255);
 border-radius:30px;            
 height: 25px;
 font-size:13px;
 }
  </string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
   </widget>
  </widget>
  <tabstops>

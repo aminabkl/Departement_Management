@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>630</width>
-    <height>522</height>
+    <height>483</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,36 +16,13 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>90</y>
-     <width>201</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>26</pointsize>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:#00456D ; </string>
-   </property>
-   <property name="text">
-    <string>Bienvenue</string>
-   </property>
-  </widget>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>200</y>
-     <width>261</width>
-     <height>221</height>
+     <x>-20</x>
+     <y>-40</y>
+     <width>281</width>
+     <height>591</height>
     </rect>
    </property>
    <property name="font">
@@ -55,311 +32,369 @@
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">QGroupBox{
-backgound-color:rgb(170, 255, 255);
-color:blue;
-}</string>
+    <string notr="true">background-color: rgb(138, 185, 211);</string>
    </property>
    <property name="title">
     <string/>
    </property>
-   <widget class="QPushButton" name="GoCoord">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>60</x>
-      <y>90</y>
-      <width>191</width>
-      <height>31</height>
+      <y>460</y>
+      <width>171</width>
+      <height>37</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>-1</pointsize>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-color: #ffffff; 
-background-color: #8AB9D3;
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="rightMargin">
+      <number>31</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="styleSheet">
+        <string notr="true">image:url(:/resources/img/goout.png);
+QPushButton{
+color: black; 
 height: 25px;
 font-size:13px;
 border-radius:10px;
 }
+QPushButton:hover{
+  background: #7AA3BA;
+}
 QPushButton:hover:!pressed
 {
-	background-color:#B9CCD6;
+	background-color:#7AA3BA;
 cursor:pointer;
 }
 QPushButton:pressed
 {
               transition: 0.9s; 
 }</string>
-    </property>
-    <property name="text">
-     <string>Gestion des coordinateurs</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>80</y>
-      <width>59</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image:url(:/resources/img/profs.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="GoProf">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>30</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>-1</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-color: #ffffff; 
-background-color: #8AB9D3;
-height: 25px;
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="LogoutButton">
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: black; 
+height: 35px;
+font-size:13px;
+border-radius:10px;
+padding-left:10px;
+padding-right:10px;
+}
+QPushButton:hover{
+  background: #7AA3BA;
+height: 55px;
+width: 100px;
 font-size:13px;
 border-radius:10px;
 }
 QPushButton:hover:!pressed
 {
-	background-color:#B9CCD6;
-cursor:pointer;
-}
-QPushButton:pressed
-{
-              transition: 0.9s; 
-}</string>
-    </property>
-    <property name="text">
-     <string>Gestion des professeurs</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image:url(:/resources/img/user_logo.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="GoSalle">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>154</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>-1</pointsize>
-      <italic>false</italic>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton{
-color: #ffffff; 
-background-color: #8AB9D3;
+	background-color:#7AA3BA;
 height: 25px;
+width: 100px;
 font-size:13px;
 border-radius:10px;
-}
-QPushButton:hover:!pressed
-{
-	background-color:#B9CCD6;
-cursor:pointer;
+
 }
 QPushButton:pressed
 {
               transition: 0.9s; 
 }</string>
-    </property>
-    <property name="text">
-     <string>Gestion des salles</string>
-    </property>
+       </property>
+       <property name="text">
+        <string>Se déconnecter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>150</y>
-      <width>59</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image:url(:/resources/img/salles.png);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_2">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>200</y>
-     <width>151</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <italic>false</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:#00456D ; </string>
-   </property>
-   <property name="title">
-    <string>Nombre de salles</string>
-   </property>
-   <widget class="QLabel" name="SalleNumber">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>51</width>
-      <height>31</height>
+      <x>70</x>
+      <y>70</y>
+      <width>181</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>26</pointsize>
+      <italic>true</italic>
       <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">backgound:transparent;</string>
+     <string notr="true">color:#00456D ; </string>
     </property>
     <property name="text">
-     <string>0</string>
+     <string>Bienvenue</string>
     </property>
    </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_3">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>260</y>
-     <width>141</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:#00456D ; </string>
-   </property>
-   <property name="title">
-    <string>Nombre de professeurs</string>
-   </property>
-   <widget class="QLabel" name="ProfNumber">
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>50</y>
-      <width>59</width>
-      <height>15</height>
+      <y>200</y>
+      <width>231</width>
+      <height>145</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QGroupBox" name="groupBox_4">
-   <property name="geometry">
-    <rect>
-     <x>300</x>
-     <y>310</y>
-     <width>151</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-     <italic>false</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color:#00456D ; </string>
-   </property>
-   <property name="title">
-    <string>Nombre de coordinateurs</string>
-   </property>
-   <widget class="QLabel" name="CoordNumber">
-    <property name="geometry">
-     <rect>
-      <x>50</x>
-      <y>50</y>
-      <width>59</width>
-      <height>15</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>16</number>
+     </property>
+     <property name="rightMargin">
+      <number>14</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="rightMargin">
+        <number>22</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">image:url(:/resources/img/user_logo.png);
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="GoProf">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: black; 
+height: 35px;
+font-size:13px;
+border-radius:10px;
+padding-left:10px;
+padding-right:10px;
+}
+QPushButton:hover{
+  background: #7AA3BA;
+height: 55px;
+width: 100px;
+font-size:13px;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+{
+	background-color:#7AA3BA;
+height: 25px;
+width: 100px;
+font-size:13px;
+border-radius:10px;
+
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Gestion des professeurs</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="rightMargin">
+        <number>7</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">image:url(:/resources/img/profs.png);
+QPushButton{
+color: black; 
+height: 25px;
+font-size:13px;
+border-radius:10px;
+}
+QPushButton:hover{
+  background: #7AA3BA;
+}
+QPushButton:hover:!pressed
+{
+	background-color:#7AA3BA;
+cursor:pointer;
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="GoCoord">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: black; 
+height: 35px;
+font-size:13px;
+border-radius:10px;
+padding-left:10px;
+padding-right:10px;
+}
+QPushButton:hover{
+  background: #7AA3BA;
+height: 55px;
+width: 100px;
+font-size:13px;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+{
+	background-color:#7AA3BA;
+height: 25px;
+width: 100px;
+font-size:13px;
+border-radius:10px;
+
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Gestion des coordinateurs</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="rightMargin">
+        <number>56</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">image:url(:/resources/img/salles.png);
+QPushButton{
+color: black; 
+height: 25px;
+font-size:13px;
+border-radius:10px;
+}
+QPushButton:hover{
+  background: #7AA3BA;
+}
+QPushButton:hover:!pressed
+{
+	background-color:#7AA3BA;
+cursor:pointer;
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="GoSalle">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+color: black; 
+height: 35px;
+font-size:13px;
+border-radius:10px;
+padding-left:10px;
+padding-right:10px;
+}
+QPushButton:hover{
+  background: #7AA3BA;
+height: 55px;
+width: 100px;
+font-size:13px;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+{
+	background-color:#7AA3BA;
+height: 25px;
+width: 100px;
+font-size:13px;
+border-radius:10px;
+
+}
+QPushButton:pressed
+{
+              transition: 0.9s; 
+}</string>
+         </property>
+         <property name="text">
+          <string>Gestion des salles</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QLabel" name="FstLogo">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>520</x>
      <y>20</y>
-     <width>121</width>
-     <height>111</height>
+     <width>75</width>
+     <height>75</height>
     </rect>
    </property>
    <property name="text">
@@ -369,69 +404,259 @@ QPushButton:pressed
   <widget class="QLabel" name="UniLogo">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>300</x>
      <y>20</y>
-     <width>121</width>
-     <height>111</height>
+     <width>75</width>
+     <height>75</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>440</y>
-     <width>31</width>
-     <height>31</height>
+     <x>350</x>
+     <y>160</y>
+     <width>211</width>
+     <height>261</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">image:url(:/resources/img/goout.png);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="LogoutButton">
-   <property name="geometry">
-    <rect>
-     <x>100</x>
-     <y>440</y>
-     <width>171</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>-1</pointsize>
-     <italic>false</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton{
-color: #ffffff; 
-background-color: #8AB9D3;
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>17</number>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+font:15px;
+font-weight:bold;
+padding-left:10px;
+color: white;
+background-color:#8AB9D3; 
+     border: 1px solid #8AB9D3; 
+     border-radius: 10px; 
+ }</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="SalleNumber">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>30</y>
+         <width>51</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">backgound:transparent;
+color:white;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GoCoord_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>161</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white; 
 height: 25px;
 font-size:13px;
 border-radius:10px;
 }
-QPushButton:hover:!pressed
-{
-	background-color:#B9CCD6;
-cursor:pointer;
+</string>
+       </property>
+       <property name="text">
+        <string>Nombre de salles</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+font:15px;
+font-weight:bold;
+padding-left:10px;
+color: white;
+background-color:#8AB9D3; 
+     border: 1px solid #8AB9D3; 
+     border-radius: 10px; 
+ }</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="CoordNumber">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>59</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GoCoord_3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>161</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white; 
+height: 25px;
+font-size:13px;
+border-radius:10px;
 }
-QPushButton:pressed
-{
-              transition: 0.9s; 
-}</string>
-   </property>
-   <property name="text">
-    <string>Se déconnecter</string>
-   </property>
+</string>
+       </property>
+       <property name="text">
+        <string>Nombre de coordinateurs</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="font">
+       <font>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+font:15px;
+font-weight:bold;
+padding-left:10px;
+color: white;
+background-color:#8AB9D3; 
+     border: 1px solid #8AB9D3; 
+     border-radius: 10px; 
+ }</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="ProfNumber">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>40</y>
+         <width>59</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:white;</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="GoCoord_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>0</y>
+         <width>161</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>-1</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+color: white; 
+height: 25px;
+font-size:13px;
+border-radius:10px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Nombre de professeurs</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
